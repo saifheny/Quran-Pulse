@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>تسجيل الدخول | نبض - تطبيق المسلم الشامل | مؤسسة SA</title>
+<meta name="description" content="نبض - تطبيق إسلامي شامل من مؤسسة SA يضم القرآن الكريم بأصوات أشهر القراء، مواقيت الصلاة، الأذكار، وأسماء الله الحسنى. سجل الآن مجاناً.">
+<meta name="keywords" content="نبض, قرآن كريم, مواقيت الصلاة, أذكار المسلم, أسماء الله الحسنى, تطبيق إسلامي, مؤسسة SA">
+<meta name="author" content="مؤسسة SA">
+<meta property="og:title" content="نبض | تطبيق المسلم الشامل">
+<meta property="og:description" content="القرآن الكريم بأصوات 56 قارئ، مواقيت الصلاة، الأذكار، أسماء الله الحسنى - مجاناً من مؤسسة SA">
+<meta property="og:image" content="https://i.postimg.cc/x1BkxF6r/f930dee177700783a3a6aaff72711874.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="نبض | تطبيق المسلم الشامل">
+<meta name="twitter:description" content="القرآن الكريم، مواقيت الصلاة، الأذكار، أسماء الله الحسنى - مجاناً">
+<meta name="twitter:image" content="https://i.postimg.cc/x1BkxF6r/f930dee177700783a3a6aaff72711874.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="canonical" href="https://sa-muslim.web.app/login.html">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"نبض","description":"تطبيق إسلامي شامل يضم القرآن الكريم ومواقيت الصلاة والأذكار وأسماء الله الحسنى","applicationCategory":"ReligionApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"author":{"@type":"Organization","name":"مؤسسة SA"},"image":"https://i.postimg.cc/x1BkxF6r/f930dee177700783a3a6aaff72711874.jpg"}
+</script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Tajawal', sans-serif; }
+body { background: #ffffff; color: #0f172a; height: 100vh; overflow: hidden; position: relative; }
+.wave-bg {
+position: absolute; z-index: 1;
+}
+.wave-top {
+top: 0; right: 0; width: 65vw; height: 50vh;
+}
+.wave-bottom {
+bottom: 0; left: 0; width: 65vw; height: 50vh;
+}
+.login-center {
+position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+z-index: 10; text-align: center; width: 90%; max-width: 400px;
+background: #ffffff;
+padding: 40px 20px;
+border-radius: 40px;
+box-shadow: 0 0 0 25px #ffffff, 0 15px 40px rgba(0,0,0,0.05);
+}
+.login-icon {
+width: 85px; height: 85px; margin: 0 auto 20px;
+background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+border-radius: 50%; display: flex; align-items: center; justify-content: center;
+font-size: 2.5rem; color: #d4a017;
+box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+animation: iconPulse 3s ease-in-out infinite;
+}
+@keyframes iconPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+.login-center h1 {
+font-size: 3rem; font-weight: 900; color: #0a0a0a; margin-bottom: 6px;
+}
+.login-center .tagline {
+font-size: 1.05rem; color: #64748b; margin-bottom: 40px; line-height: 1.7;
+}
+.google-btn {
+width: 100%; padding: 18px; background: #0a0a0a; border: none;
+border-radius: 60px; display: flex; align-items: center; justify-content: center;
+gap: 14px; font-size: 1.1rem; font-weight: 700; color: white;
+cursor: pointer; transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.google-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,0.25); background: #1a1a2e; }
+.google-btn:active { transform: scale(0.97); }
+.google-btn img { width: 24px; height: 24px; filter: brightness(10); }
+#loader { display: none; margin-top: 25px; font-size: 2.2rem; color: #0a0a0a; }
+.login-footer {
+margin-top: 30px; font-size: 0.9rem; color: #94a3b8; line-height: 1.8;
+}
+.login-footer a { color: #0a0a0a; text-decoration: none; font-weight: 700; }
+.sa-badge {
+position: absolute; bottom: 15px; right: 20px; z-index: 10;
+font-size: 0.8rem; color: #cbd5e1; font-weight: 500;
+}
+@media (max-width: 768px) {
+.wave-top { width: 85vw; height: 40vh; }
+.wave-bottom { width: 85vw; height: 40vh; }
+.login-center h1 { font-size: 2.4rem; }
+.login-icon { width: 70px; height: 70px; font-size: 2rem; }
+}
+</style>
+</head>
+<body>
+<svg class="wave-bg wave-top" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path d="M100,0 L0,0 C30,30 50,80 100,100 Z" fill="#0a0a0a"></path>
+</svg>
+<svg class="wave-bg wave-bottom" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path d="M0,100 L100,100 C50,90 50,10 0,0 Z" fill="#0a0a0a"></path>
+</svg>
+<div class="login-center">
+<div class="login-icon" style="background: transparent; box-shadow: none; margin-bottom: 10px;">
+<i class="fas fa-kaaba" style="font-size: 5rem; background: linear-gradient(135deg, #065f46, #d97706); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 10px 15px rgba(6, 95, 70, 0.2));"></i>
+</div>
+<h1>نبض</h1>
+<p class="tagline">بوابتك لرحلة إيمانية متكاملة</p>
+<button class="google-btn" id="googleLogin">
+<img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+<span>المتابعة باستخدام جوجل</span>
+</button>
+<div id="loader"><i class="fas fa-circle-notch fa-spin"></i></div>
+<div class="login-footer">
+الاستمرار يعني موافقتك على<br>
+<a href="terms.html">شروط الاستخدام</a> و <a href="privacy.html">سياسة الخصوصية</a>
+</div>
+</div>
+<div class="sa-badge">مؤسسة SA</div>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+const firebaseConfig = { apiKey: "AIzaSyA7B3DlSdR05MKBf2bSIC7hGrGAYlS5pVw", authDomain: "sa999-b263c.firebaseapp.com", databaseURL: "https://sa999-b263c-default-rtdb.firebaseio.com", projectId: "sa999-b263c", storageBucket: "sa999-b263c.firebasestorage.app", messagingSenderId: "751460990300", appId: "1:751460990300:web:4fe4b19fc41f1e37fe5599" };
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+onAuthStateChanged(auth, (user) => { if (user) window.location.href = 'index.html'; });
+document.getElementById('googleLogin').addEventListener('click', () => {
+document.getElementById('googleLogin').style.display = 'none';
+document.getElementById('loader').style.display = 'block';
+signInWithPopup(auth, new GoogleAuthProvider()).then(() => window.location.href = 'index.html').catch(() => {
+document.getElementById('googleLogin').style.display = 'flex';
+document.getElementById('loader').style.display = 'none';
+});
+});
+</script>
+</body>
+</html>
